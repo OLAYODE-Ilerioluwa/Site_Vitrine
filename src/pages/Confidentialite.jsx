@@ -1,4 +1,4 @@
-import { LegalLayout, LegalSection } from "../compenents/LegalLayout";
+import { LegalLayout, LegalSection } from "../components/LegalLayout";
 import { legal } from "../data/legal";
 
 export const Confidentialite = () => (

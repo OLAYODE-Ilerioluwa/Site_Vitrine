@@ -1,27 +1,13 @@
-import { ThemeToggle } from "../compenents/ThemeToggle.jsx";
-import { AuroraBackground } from "../compenents/AuroraBackground.jsx";
-import { NavBar } from "../compenents/NavBar.jsx";
-import {HeroSection} from "../compenents/HeroSection.jsx";
-import {AboutMe} from "../compenents/AboutMe.jsx"
-import { Skills } from "../compenents/Skills.jsx";
-import { Projets } from "../compenents/Projets.jsx";
-import { Contact } from "../compenents/Contact.jsx";
-import { Footer} from "../compenents/Footer.jsx"
-import { Parcours } from "../compenents/Parcours.jsx";
-import { Entreprise } from "../compenents/Entreprise.jsx";
+import { NavBar } from "../components/NavBar.jsx";
+import {HeroSection} from "../components/HeroSection.jsx";
+import {AboutMe} from "../components/AboutMe.jsx"
+import { Skills } from "../components/Skills.jsx";
+import { Projets } from "../components/Projets.jsx";
+import { Contact } from "../components/Contact.jsx";
+import { Footer} from "../components/Footer.jsx"
+import { Parcours } from "../components/Parcours.jsx";
+import { Entreprise } from "../components/Entreprise.jsx";
 
-
-const useHash = () => {
-    const [hash, setHash] = useState(window.location.hash);
-
-    useEffect(() => {
-        const onChange = () => setHash(window.location.hash);
-        window.addEventListener("hashchange", onChange);
-        return () => window.removeEventListener("hashchange", onChange);
-    }, []);
-
-    return hash;
-};
 
 export const Home = () => {
   return (
@@ -45,11 +31,3 @@ export const Home = () => {
     </div>
   );
 };
-
-function App() {
-    const hash = useHash();
-
-    if (hash === "#mentions-legales") return <MentionsLegales />;
-    if (hash === "#confidentialite") return <Confidentialite />;
-    return <Home />;
-}

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export const LegalLayout = ({ title, children }) => {
     useEffect(() => {

@@ -1,7 +1,7 @@
 
-import { AuroraBackground } from "../compenents/AuroraBackground.jsx";
-import { NavBar } from "../compenents/NavBar.jsx";
-import { Footer} from "../compenents/Footer.jsx"
+import { AuroraBackground } from "../components/AuroraBackground.jsx";
+import { NavBar } from "../components/NavBar.jsx";
+import { Footer} from "../components/Footer.jsx"
 
 
 export const Mention = () => {
